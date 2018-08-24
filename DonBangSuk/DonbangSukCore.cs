@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DonBangSuk
 {
+
+    // PSH 08/23/18 : added to the github
     public class DonbangSukCore
     {
         Client client = null;
