@@ -13,5 +13,10 @@ namespace DBSMobile
 		{
 			InitializeComponent();
 		}
+
+        public void ButClicked(EventArgs e)
+        {
+            Console.WriteLine("this is working");
+        }
 	}
 }
