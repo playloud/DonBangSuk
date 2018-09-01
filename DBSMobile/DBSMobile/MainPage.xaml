@@ -12,6 +12,14 @@
         <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand">this is the label again</Label>
         <Editor Text="this is a editor" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
         <Button Text="click me button" Clicked="ButClicked"/>
+        
+        
+        
     </StackLayout>
+    
+    
+    
+    
+    
 
 </ContentPage>
