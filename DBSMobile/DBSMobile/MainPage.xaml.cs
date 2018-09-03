@@ -12,11 +12,15 @@ namespace DBSMobile
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+        }
 
-        public void ButClicked(EventArgs e)
+        async public void ButClicked(EventArgs e)
         {
-            Console.WriteLine("this is working");
+            Page_TableTest tableTest = new Page_TableTest();
+            
+            await this.Navigation.PushAsync(tableTest);
+            //App.Current.MainPage = new NavigationPage();
+            //Application.Current.MainPage.Navigation.PushAsync(tableTest);
         }
 	}
 }

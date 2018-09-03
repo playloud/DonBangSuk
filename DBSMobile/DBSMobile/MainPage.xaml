@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DBSMobile"
              x:Class="DBSMobile.MainPage">
-
     <StackLayout>
         <!-- Place new controls here -->
     	<Label Text="Welcome to Xamarin.Forms!" 
@@ -11,9 +10,51 @@
            VerticalOptions="CenterAndExpand" />
         <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand">this is the label again</Label>
         <Editor Text="this is a editor" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-        <Button Text="click me button" Clicked="ButClicked"/>
+        <Button Text="Move to tableTest" Clicked="ButClicked"/>
         
         
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Getting Started">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Prev"/>
+                            <Button Text="Next"/>
+                            <Label Text="left" TextColor="#f35e20" />
+                            <Label 
+                                Text="right"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Second View Cell" TextColor="#f35e20" />
+                        </StackLayout>
+                    </ViewCell>
+                    <EntryCell>
+                        <EntryCell.Label>
+                            labelll
+                        </EntryCell.Label>
+                        <EntryCell.Placeholder>
+                            placeholderrrr
+                        </EntryCell.Placeholder>
+                    </EntryCell>
+                    <EntryCell Label="Numeric" Placeholder="123.." Keyboard="Numeric"/>
+                    <EntryCell Label="Numeric" Placeholder="1234.." Keyboard="Numeric"/>
+                    <ViewCell>
+                        <DatePicker>
+                            <DatePicker.MinimumDate>
+                                01/01/1968
+                            </DatePicker.MinimumDate>
+                            <DatePicker.MaximumDate>
+                                12/31/2100
+                            </DatePicker.MaximumDate>
+                        </DatePicker>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
         
     </StackLayout>
     
