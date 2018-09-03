@@ -12,7 +12,6 @@
         <Editor Text="this is a editor" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
         <Button Text="Move to tableTest" Clicked="ButClicked"/>
         
-        
         <TableView Intent="Settings">
             <TableRoot>
                 <TableSection Title="Getting Started">

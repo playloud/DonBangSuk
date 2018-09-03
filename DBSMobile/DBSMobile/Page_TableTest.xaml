@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="DBSMobile.Page_TableTest">
     <ContentPage.Content>
         <StackLayout>
@@ -8,6 +9,48 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="another button for nav" Clicked="OnButClicked"/>
+
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Zip Gender DOB">
+                        <EntryCell Label="ZipCode" Placeholder="12345" Keyboard="Numeric"/>
+                        <EntryCell Label="Gender"  Placeholder="Male/Female" Keyboard="Numeric"/>
+                        <ViewCell>
+                            <Label Text="DOB"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <DatePicker>
+                                <DatePicker.MinimumDate>
+                                    01/01/1968
+                                </DatePicker.MinimumDate>
+                                <DatePicker.MaximumDate>
+                                    12/31/2100
+                                </DatePicker.MaximumDate>
+                            </DatePicker>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Citizenships Spouse AnuualIncome">
+                        <ViewCell>
+                          
+                            <StackLayout>
+                              
+                                <controls:CheckBox DefaultText="checkPlease" HorizontalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <DatePicker>
+                                <DatePicker.MinimumDate>
+                                    01/01/1968
+                                </DatePicker.MinimumDate>
+                                <DatePicker.MaximumDate>
+                                    12/31/2100
+                                </DatePicker.MaximumDate>
+                            </DatePicker>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
