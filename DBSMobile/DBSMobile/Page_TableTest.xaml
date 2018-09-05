@@ -4,53 +4,64 @@
              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="DBSMobile.Page_TableTest">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="this is table test page"
+        <ScrollView>
+            <StackLayout>
+                <!--<Label Text="this is table test page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="another button for nav" Clicked="OnButClicked"/>
-
-            <TableView>
-                <TableRoot>
-                    <TableSection Title="Zip Gender DOB">
-                        <EntryCell Label="ZipCode" Placeholder="12345" Keyboard="Numeric"/>
-                        <EntryCell Label="Gender"  Placeholder="Male/Female" Keyboard="Numeric"/>
-                        <ViewCell>
-                            <StackLayout>
-                                <Label Text="DOB"/>
-                                <DatePicker>
-                                    <DatePicker.MinimumDate>
-                                        01/01/1968
-                                    </DatePicker.MinimumDate>
-                                    <DatePicker.MaximumDate>
-                                        12/31/2100
-                                    </DatePicker.MaximumDate>
-                                </DatePicker>
-                            </StackLayout>
-                        </ViewCell>
-                    </TableSection>
-                    <TableSection Title="Citizenships Spouse AnuualIncome">
-                        <ViewCell>
-                            <StackLayout>
-                                <Label Text="citizenships"/>
-                                <StackLayout FlowDirection="LeftToRight">
-                                    <controls:CheckBox DefaultText="checkPlease"/>
-                                    <controls:CheckBox DefaultText="checkPlease2"/>
+                <Button Text="another button for nav" Clicked="OnButClicked"/>-->
+                <TableView HasUnevenRows="True">
+                    <TableRoot>
+                        <TableSection Title="Zip Gender DOB" RelativeLayout.HeightConstraint="2">
+                            <EntryCell Label="ZipCode" Placeholder="12345" Keyboard="Numeric"/>
+                            <ViewCell>
+                                <StackLayout>
+                                    <StackLayout>
+                                        <Label Text="Gender"/>
+                                        <controls:BindableRadioGroup x:Name="GenderRGroup" />
+                                    </StackLayout>
                                 </StackLayout>
-                            </StackLayout>
-                        </ViewCell>
-                        <ViewCell>
-                            <StackLayout>
-                                <controls:BindableRadioGroup>
-                                    <controls:CustomRadioButton Text="rbutton1"/>
-                                    <controls:CustomRadioButton Text="rbutton2"/>
-                                </controls:BindableRadioGroup>
-                            </StackLayout>
-                        </ViewCell>
-                    </TableSection>
-                </TableRoot>
-            </TableView>
-            
-        </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="DOB"/>
+                                    <DatePicker>
+                                        <DatePicker.MinimumDate>
+                                            01/01/1968
+                                        </DatePicker.MinimumDate>
+                                        <DatePicker.MaximumDate>
+                                            12/31/2100
+                                        </DatePicker.MaximumDate>
+                                    </DatePicker>
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection Title="Citizenships Spouse AnuualIncome">
+                            <ViewCell>
+                                <StackLayout>
+                                    <StackLayout>
+                                        <Label Text="Citizenship"/>
+                                        <controls:BindableRadioGroup x:Name="CitizenshipRGroup" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="Has Spouse?"/>
+                                    <controls:BindableRadioGroup x:Name="SpouseRGroup" />
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection Title="Name email Phone">
+                            <EntryCell Label="Name" Placeholder="FirstName LastName" Keyboard="Plain" />
+                            <EntryCell Label="Email" Placeholder="abc@game.com" Keyboard="Email" />
+                            <EntryCell Label="Phone" Placeholder="123 123 1233" Keyboard="Telephone" />
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>
