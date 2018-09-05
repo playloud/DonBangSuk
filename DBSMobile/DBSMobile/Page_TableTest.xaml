@@ -16,36 +16,36 @@
                         <EntryCell Label="ZipCode" Placeholder="12345" Keyboard="Numeric"/>
                         <EntryCell Label="Gender"  Placeholder="Male/Female" Keyboard="Numeric"/>
                         <ViewCell>
-                            <Label Text="DOB"/>
-                        </ViewCell>
-                        <ViewCell>
-                            <DatePicker>
-                                <DatePicker.MinimumDate>
-                                    01/01/1968
-                                </DatePicker.MinimumDate>
-                                <DatePicker.MaximumDate>
-                                    12/31/2100
-                                </DatePicker.MaximumDate>
-                            </DatePicker>
+                            <StackLayout>
+                                <Label Text="DOB"/>
+                                <DatePicker>
+                                    <DatePicker.MinimumDate>
+                                        01/01/1968
+                                    </DatePicker.MinimumDate>
+                                    <DatePicker.MaximumDate>
+                                        12/31/2100
+                                    </DatePicker.MaximumDate>
+                                </DatePicker>
+                            </StackLayout>
                         </ViewCell>
                     </TableSection>
                     <TableSection Title="Citizenships Spouse AnuualIncome">
                         <ViewCell>
-                          
                             <StackLayout>
-                              
-                                <controls:CheckBox DefaultText="checkPlease" HorizontalOptions="FillAndExpand"/>
+                                <Label Text="citizenships"/>
+                                <StackLayout FlowDirection="LeftToRight">
+                                    <controls:CheckBox DefaultText="checkPlease"/>
+                                    <controls:CheckBox DefaultText="checkPlease2"/>
+                                </StackLayout>
                             </StackLayout>
                         </ViewCell>
                         <ViewCell>
-                            <DatePicker>
-                                <DatePicker.MinimumDate>
-                                    01/01/1968
-                                </DatePicker.MinimumDate>
-                                <DatePicker.MaximumDate>
-                                    12/31/2100
-                                </DatePicker.MaximumDate>
-                            </DatePicker>
+                            <StackLayout>
+                                <controls:BindableRadioGroup>
+                                    <controls:CustomRadioButton Text="rbutton1"/>
+                                    <controls:CustomRadioButton Text="rbutton2"/>
+                                </controls:BindableRadioGroup>
+                            </StackLayout>
                         </ViewCell>
                     </TableSection>
                 </TableRoot>
