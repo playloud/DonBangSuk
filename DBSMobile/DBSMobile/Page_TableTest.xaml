@@ -10,9 +10,9 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
                 <Button Text="another button for nav" Clicked="OnButClicked"/>-->
-                <TableView HasUnevenRows="True">
+                <TableView x:Name="MainTable" HasUnevenRows="True">
                     <TableRoot>
-                        <TableSection Title="Zip Gender DOB" RelativeLayout.HeightConstraint="2">
+                        <TableSection x:Name="section01" Title="Zip Gender DOB">
                             <EntryCell Label="ZipCode" Placeholder="12345" Keyboard="Numeric"/>
                             <ViewCell>
                                 <StackLayout>
@@ -37,7 +37,8 @@
                                 </StackLayout>
                             </ViewCell>
                         </TableSection>
-                        <TableSection Title="Citizenships Spouse AnuualIncome">
+
+                        <TableSection x:Name="section02" Title="Citizenships Spouse AnuualIncome">
                             <ViewCell>
                                 <StackLayout>
                                     <StackLayout>
@@ -48,18 +49,32 @@
                             </ViewCell>
                             <ViewCell>
                                 <StackLayout>
-                                    <Label Text="Has Spouse?"/>
+                                    <Label Text="Have Spouse?"/>
                                     <controls:BindableRadioGroup x:Name="SpouseRGroup" />
                                 </StackLayout>
                             </ViewCell>
                         </TableSection>
-                        <TableSection Title="Name email Phone">
-                            <EntryCell Label="Name" Placeholder="FirstName LastName" Keyboard="Plain" />
+
+                        <TableSection x:Name="section03" Title="Name email Phone">
+                            <EntryCell Label="Name" Placeholder="First Last" Keyboard="Plain" />
                             <EntryCell Label="Email" Placeholder="abc@game.com" Keyboard="Email" />
                             <EntryCell Label="Phone" Placeholder="123 123 1233" Keyboard="Telephone" />
                         </TableSection>
                     </TableRoot>
                 </TableView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Controls" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Button Text="Prev" Grid.Row="1" Grid.Column="0" Clicked="PrevClicked"/>
+                    <Button Text="Next" Grid.Row="1" Grid.Column="1" Clicked="NextClicked"/>
+                </Grid>
             </StackLayout>
         </ScrollView>
         
