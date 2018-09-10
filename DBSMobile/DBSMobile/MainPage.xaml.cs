@@ -14,13 +14,23 @@ namespace DBSMobile
 			InitializeComponent();
         }
 
-        async public void ButClicked(EventArgs e)
+        async public void Clicked_TableTest(EventArgs e)
         {
             Page_TableTest tableTest = new Page_TableTest();
             
             await this.Navigation.PushAsync(tableTest);
             //App.Current.MainPage = new NavigationPage();
             //Application.Current.MainPage.Navigation.PushAsync(tableTest);
+        }
+
+        async public void Clicked_ListviewTest(EventArgs e)
+        {
+
+        }
+
+        public void Clicked_CarouselTest(EventArgs e)
+        {
+
         }
 	}
 }
