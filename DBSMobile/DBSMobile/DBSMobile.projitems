@@ -66,15 +66,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\aigDirect.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\americanNational.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\ethos.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\fidelitylife.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\HavenLife.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\HealthIQ.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\aigDirect.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\americanNational.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\ethos.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\fidelitylife.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HavenLife.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HealthIQ.png" />
     <Content Include="$(MSBuildThisFileDirectory)companyLogo\LogoFiles.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\nationalFamily.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\policyGenius.png" />
-    <Content Include="$(MSBuildThisFileDirectory)companyLogo\trustage.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\nationalFamily.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\policyGenius.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\trustage.jpg" />
   </ItemGroup>
 </Project>
