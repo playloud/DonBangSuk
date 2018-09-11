@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DBSMobile.Core;
 
 namespace DBSMobile
 {
@@ -15,10 +16,19 @@ namespace DBSMobile
 		public Page_ListviewTest ()
 		{
 			InitializeComponent ();
-		}
+            this.productsListView.ItemsSource = TestUtil.GetProducts();
+        }
+
+        public void ItemTabbed(EventArgs e)
+        {
+            PolicyProduct pp = (PolicyProduct)this.productsListView.SelectedItem;
+            
+            DisplayAlert("Alert", pp.Name, "OK");
+        }
 
 
-	}
+
+    }
 
     
 }

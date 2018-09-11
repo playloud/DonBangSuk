@@ -13,6 +13,7 @@ namespace DBSMobile.Core
         public string LongDescription { get; set; }
         public decimal MonthlyPayment { get; set; }
         public string CompanyName { get; set; }
+        public string CompanyImagePath { get; set; }
 
     }
 

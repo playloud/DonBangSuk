@@ -5,16 +5,16 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Listview Test" HorizontalOptions="CenterAndExpand" />
-            <ListView>
+            <ListView  x:Name="productsListView" HasUnevenRows="True" ItemTapped="ItemTabbed">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <!--todo : change bindings-->
                             <StackLayout BackgroundColor="#eee" Orientation="Vertical">
                                 <StackLayout Orientation="Horizontal">
-                                    <Image Source="{Binding image}" />
-                                    <Label Text="{Binding title}" TextColor="#f35e20" />
-                                    <Label Text="{Binding subtitle}" HorizontalOptions="EndAndExpand" TextColor="#503026" />
+                                    <Image Source="{Binding CompanyImagePath}" />
+                                    <Label Text="{Binding Name}" TextColor="#f35e20" FontSize="Small" />
+                                    <Label Text="{Binding ShortDescription}" HorizontalOptions="EndAndExpand" TextColor="#503026" FontSize="Micro" />
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

@@ -25,7 +25,8 @@ namespace DBSMobile
 
         async public void Clicked_ListviewTest(EventArgs e)
         {
-
+            Page_ListviewTest lt = new Page_ListviewTest();
+            await this.Navigation.PushAsync(lt, true);
         }
 
         public void Clicked_CarouselTest(EventArgs e)
