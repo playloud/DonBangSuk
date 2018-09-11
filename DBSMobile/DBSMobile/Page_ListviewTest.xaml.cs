@@ -23,7 +23,7 @@ namespace DBSMobile
         {
             PolicyProduct pp = (PolicyProduct)this.productsListView.SelectedItem;
             
-            DisplayAlert("Alert", pp.Name, "OK");
+            DisplayAlert("Alert", string.Format("{0} ==> {1}", pp.Name, pp.CompanyImagePath), "OK");
         }
 
 

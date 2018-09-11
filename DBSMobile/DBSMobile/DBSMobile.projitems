@@ -16,9 +16,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Company.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\PolicyProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\Tester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\TestUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Util.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -64,6 +66,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)companyLogo\" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\aigDirect.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\americanNational.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\ethos.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\fidelitylife.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\HavenLife.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\HealthIQ.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\LogoFiles.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\nationalFamily.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\policyGenius.png" />
+    <Content Include="$(MSBuildThisFileDirectory)companyLogo\trustage.jpg" />
   </ItemGroup>
 </Project>

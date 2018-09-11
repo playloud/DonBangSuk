@@ -16,9 +16,9 @@ namespace DBSMobile.Core
             items.Add(new PolicyProduct() {
                 Name = "LifeLong policy",
                 ShortDescription = "this is a short description",
-                LongDescription="Hello this is a long description",
-                MonthlyPayment=23,
-                CompanyName="AIG"
+                LongDescription = "Hello this is a long description",
+                MonthlyPayment = 23,
+                MyCompany = CompanyFactory.CreateCompany(Brands.AIGDirect)
             });
 
             items.Add(new PolicyProduct()
@@ -27,16 +27,16 @@ namespace DBSMobile.Core
                 ShortDescription = "Better than this",
                 LongDescription = "Hello this is a long description",
                 MonthlyPayment = 33,
-                CompanyName = "AIG"
+                MyCompany = CompanyFactory.CreateCompany(Brands.Ethos)
             });
 
             items.Add(new PolicyProduct()
             {
-                Name = "Funky policy II",
+                Name = "FL life is Funky",
                 ShortDescription = "this is a short description",
                 LongDescription = "Hello this is a long description",
                 MonthlyPayment = 32,
-                CompanyName="Trust"
+                MyCompany = CompanyFactory.CreateCompany(Brands.FidelityLife)
             });
 
             items.Add(new PolicyProduct()
@@ -45,12 +45,14 @@ namespace DBSMobile.Core
                 ShortDescription = "this is a short description",
                 LongDescription = "Hello this is a long description",
                 MonthlyPayment = 33,
-                CompanyName = "GreatBank"
+                MyCompany = CompanyFactory.CreateCompany(Brands.GlobalLife)
             });
 
 
             return items;
         }
+
+
     }
 
     
