@@ -14,7 +14,6 @@ namespace DBSMobile.Core
         PolicyGenius,
         FidelityLife,
         Trustage,
-        GlobalLife,
         NationalFamily
     }
 
@@ -89,31 +88,31 @@ namespace DBSMobile.Core
             switch (name)
             {
                 case Brands.AIGDirect:
-                    return @"companyLogo\aigDirect.png";
+                    return @"companyLogo/aigDirect.png";
 
                 case Brands.AmericanNational:
-                    return @"companyLogo\americanNational.png";
+                    return @"companyLogo/americanNational.png";
 
                 case Brands.Ethos:
-                    return @"companyLogo\ethos.png";
+                    return @"companyLogo/ethos.png";
 
                 case Brands.FidelityLife:
-                    return @"companyLogo\fidelitylife.png";
+                    return @"companyLogo/fidelitylife.png";
 
                 case Brands.HavenLife:
-                    return @"companyLogo\HavenLife.png";
+                    return @"companyLogo/HavenLife.png";
 
                 case Brands.HealthIQ:
-                    return @"companyLogo\HealthIQ.png";
+                    return @"companyLogo/HealthIQ.png";
 
                 case Brands.NationalFamily:
-                    return @"companyLogo\nationalFamily.png";
+                    return @"companyLogo/nationalFamily.png";
 
                 case Brands.PolicyGenius:
-                    return @"companyLogo\policyGenius.png";
+                    return @"companyLogo/policyGenius.png";
 
                 case Brands.Trustage:
-                    return @"companyLogo\trustage.jpg";
+                    return @"companyLogo/trustage.jpg";
 
                 default:
                     return "";

@@ -3,14 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DBSMobile"
              x:Class="DBSMobile.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="***TESTING SUITE***"  HorizontalOptions="Center"/>
-        <Button Text="Main Table Test" Clicked="Clicked_TableTest"/>
-        <Button Text="List view test" Clicked="Clicked_ListviewTest"/>
-        <Button Text="Carousel test" Clicked="Clicked_CarouselTest"/>
-        
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="***TESTING SUITE***"  HorizontalOptions="Center"/>
+            <Button Text="Main Table Test" Clicked="Clicked_TableTest"/>
+            <Button Text="List view test" Clicked="Clicked_ListviewTest"/>
+            <Button Text="Carousel test" Clicked="Clicked_CarouselTest"/>
+            <Button Text="File test" Clicked="Clicked_FileTest"/>
+            
+            <Label Text="fidelitylife should be visible1"/>
+            <Image Source="./companyLogo/fidelitylife.png"  />
+            
+            <Label Text="fidelitylife should be visible2"/>
+            <Image Source="companyLogo/fidelitylife.png"  />
+            
+            <Label Text="fidelitylife should be visible3"/>
+            <Image Source="Resources/companyLogo/fidelitylife.png" />
+            
+            <Label Text="fidelitylife should be visible4"/>
+            <Image Source="Resources/drawable/companyLogo/fidelitylife.png" />
+            
+            <Label Text="fidelitylife should be visible5"/>
+            <Image Source="Resources/fidelitylife.png" />
+
+            <Label Text="fidelitylife should be visible 6"/>
+            <Image Source="fidelitylife.png" MinimumHeightRequest="23" MinimumWidthRequest="55" />
+
+        </StackLayout>
+    </ScrollView>
+   
     
     
     

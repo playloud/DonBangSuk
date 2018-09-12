@@ -40,6 +40,7 @@
       <DependentUpon>Page_TableTest.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PolicyProductViewCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Page_TableTest.xaml">
@@ -66,17 +67,33 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\aigDirect.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)companyLogo\aigDirect.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </ApplicationDefinition>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\americanNational.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\americanNational.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\ethos.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\fidelitylife.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HavenLife.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HealthIQ.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\ethos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\fidelitylife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HavenLife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\HealthIQ.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="$(MSBuildThisFileDirectory)companyLogo\LogoFiles.txt" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\nationalFamily.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\policyGenius.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\trustage.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\nationalFamily.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\policyGenius.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)companyLogo\trustage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

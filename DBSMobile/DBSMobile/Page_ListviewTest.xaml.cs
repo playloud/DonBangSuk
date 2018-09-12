@@ -22,8 +22,11 @@ namespace DBSMobile
         public void ItemTabbed(EventArgs e)
         {
             PolicyProduct pp = (PolicyProduct)this.productsListView.SelectedItem;
+
+            StringBuilder sbuf = new StringBuilder();
+            sbuf.AppendLine(string.Format("{0} {1}", pp.CompanyImagePath, pp.CompanyImage.IsVisible));
             
-            DisplayAlert("Alert", string.Format("{0} ==> {1}", pp.Name, pp.CompanyImagePath), "OK");
+            DisplayAlert("Alert", sbuf.ToString(), "OK");
         }
 
 

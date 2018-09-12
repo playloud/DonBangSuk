@@ -33,5 +33,24 @@ namespace DBSMobile
         {
 
         }
+
+        public void Clicked_FileTest(EventArgs e)
+        {
+            StringBuilder sbuf = new StringBuilder();
+            try
+            {
+                string[] files = System.IO.Directory.GetFiles(".");
+                foreach (string f in files)
+                {
+                    sbuf.Append(f);
+                }
+            }
+            catch (Exception ex)
+            {
+                sbuf.Append(ex.ToString() + ex.StackTrace.ToString());
+            }
+            
+            DisplayAlert("Debug all files", sbuf.ToString(), "cancel");
+        }
 	}
 }

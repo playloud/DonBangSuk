@@ -45,7 +45,7 @@ namespace DBSMobile.Core
                 ShortDescription = "this is a short description",
                 LongDescription = "Hello this is a long description",
                 MonthlyPayment = 33,
-                MyCompany = CompanyFactory.CreateCompany(Brands.GlobalLife)
+                MyCompany = CompanyFactory.CreateCompany(Brands.HealthIQ)
             });
 
 
