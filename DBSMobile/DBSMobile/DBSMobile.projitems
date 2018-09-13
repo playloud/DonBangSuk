@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Core\PolicyProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\Tester.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\TestUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\UserInput.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\Util.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

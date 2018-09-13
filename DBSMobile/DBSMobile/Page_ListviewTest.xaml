@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Listview Test" HorizontalOptions="CenterAndExpand" />
-            <ListView  x:Name="productsListView" HasUnevenRows="True" ItemTapped="ItemTabbed">
+            <ListView  x:Name="productsListView" HasUnevenRows="True" ItemTapped="ItemTabbed" SeparatorColor="Black" SeparatorVisibility="Default">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
